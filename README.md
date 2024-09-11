@@ -22,5 +22,6 @@ yarn add jubair-react-component-library
 import {Page} from 'jubair-react-component-library';
 ```
 
+```js
 <Page title={title}>{children}</Page>
 ```
