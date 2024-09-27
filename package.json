@@ -1,6 +1,6 @@
 {
   "name": "jubair-react-component-library",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This is a react component library ",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
