@@ -1,5 +1,5 @@
-import { Meta, Story } from "@storybook/react";
-import { ButtonProps } from "primereact/button";
+import { type Meta, type Story } from "@storybook/react";
+import { type ButtonProps } from "primereact/button";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import CustomButton from ".";
 
@@ -8,8 +8,8 @@ export default {
   component: CustomButton,
   argTypes: {
     label: { control: "text" },
-    onClick: { action: "clicked" },
-  },
+    onClick: { action: "clicked" }
+  }
 } as Meta;
 
 // Template for stories
@@ -19,28 +19,28 @@ const Template: Story<ButtonProps & { label: string }> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  label: "Primary Button",
+  label: "Primary Button"
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: "secondary Button",
-  severity: "secondary",
+  severity: "secondary"
 };
 export const Success = Template.bind({});
 Success.args = {
   label: "Success Button",
-  severity: "success",
+  severity: "success"
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   label: "Disabled Button",
-  disabled: true,
+  disabled: true
 };
 
 export const Clickable = Template.bind({});
 Clickable.args = {
   label: "Click Me",
-  onClick: () => alert("Clicked!"),
+  onClick: () => { alert("Clicked!"); }
 };
